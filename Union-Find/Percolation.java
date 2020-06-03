@@ -3,19 +3,18 @@ import edu.princeton.cs.algs4.WeightedQuickUnionUF;
 public class Percolation {
     // Instance variables
     private int[][] grid;
-    private int gridSize;
     private int count;
-    private int gridLength;     // n is the length of the grid. n x n => grid
-    private int topRowIndex;    // virtual top index that goes before (1,1)
-    private int bottomRowIndex; // virtual bottom index that goes after (n, n)
-    private WeightedQuickUnionUF uf;
+    private final int gridLength;     // n is the length of the grid. n x n => grid
+    private final int topRowIndex;    // virtual top index that goes before (1,1)
+    private final int bottomRowIndex; // virtual bottom index that goes after (n, n)
+    private final WeightedQuickUnionUF uf;
 
     // Constructor. Take value 0 to be blocked and value 1 to be open.
     public Percolation(int n) {
         if (n <= 0) throw new IllegalArgumentException("Invalid n. Must be at least 1.");
         gridLength = n;
         grid = new int[gridLength][gridLength];
-        gridSize = gridLength * gridLength;
+        int gridSize = gridLength * gridLength;
         topRowIndex = 0;
         bottomRowIndex = gridLength * gridLength + 1;
         // Initialize uf such that it includes the two virtual top and bottom indexes.
