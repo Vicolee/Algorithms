@@ -13,7 +13,7 @@ public class LinkedListStack<Item> implements Iterable<Item> {
      * Having the Node class as static makes it more of a top-level
      * class that is not bound to an instance of the outer class.
      * Hence other classes can create instances of Node without
-     * creating any instance of LinkedListStack
+     * creating any instance of LinkedListStack.
      */
     private static class Node<Item> {
         private Item item;

@@ -7,7 +7,7 @@ import java.util.NoSuchElementException;
 /**
  * Generic stack implementation with a fixed-size array.
  * Remark: bare-bones implementation. Does not do repeated
- * doubling or null out empty array entries to avoid loitering
+ * doubling or null out empty array entries to avoid loitering.
  **/
 public class FixedCapacityStack<Item> implements Iterable<Item> {
     private Item[] a;

@@ -6,7 +6,7 @@ import java.util.NoSuchElementException;
 
 /**
  * The {@code ResizingArrayStack} class represents a last-in-first-out (LIFO) stack
- * of generic items.
+ * of generic items
  */
 public class ResizingArrayStack<Item> implements Iterable<Item> {
     private Item[] a;
