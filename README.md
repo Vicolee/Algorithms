@@ -1,5 +1,5 @@
-# Algorithms
-This depository is to track my own learning in algorithms. I have used numerous fantastic resources including Khan Academy's Intro to Algorithms and Princeton's Coursera Algorithm course.
+# Algorithms and Data Structures
+This depository is to track my own learning in algorithms and data structures. I have used numerous fantastic resources including Khan Academy's Intro to Algorithms and Princeton's Coursera Algorithm course.
 # References
 [Khan Academy CS Course](https://www.khanacademy.org/computing/computer-science/algorithms)
 
